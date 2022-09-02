@@ -1,0 +1,43 @@
+class Queue:
+    def __init__(self, items=None):
+        if items == None:
+            self.items = []
+        else:
+            self.items = items
+
+    def enQueue(self, i):
+        self.items.append(i)
+
+    def dequeue(self):
+        if self.size() != 0:
+            return self.items.pop(0)
+        else:
+            return None
+
+    def isempty(self):
+        return len(self.items) == 0
+
+    def size(self):
+        return len(self.items)
+
+
+Q = Queue()
+inp = input("Enter Input : ").split(',')
+for i in inp:
+    if i[0] == 'E':
+        tempE = i.split(' ')
+        Q.enQueue(int(tempE[1]))
+        print(Q.size())
+        tempE = []
+    elif i[0] == 'D':
+        tempD = Q.dequeue()
+        if tempD != None:
+            print(tempD, "0")
+        else:
+            print("-1")
+if Q.size()!=0:
+    for i in Q.items:
+        print(i,end=' ')
+else:
+    print("Empty")
+
