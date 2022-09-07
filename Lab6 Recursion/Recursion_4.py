@@ -1,11 +1,10 @@
 def perketcalculation(L):
-    if len(L) == 1:
-        s, b = 1, 0
-        for j in L[0]:
-            tempj = list(map(int, j.split(' ')))
-            s *= tempj[0]
-            b += tempj[1]
-        return abs(s-b)
+    if len(L) == 1 and len(L[0]) == 1:
+        temp = list(map(int, L[0][0].split(' ')))
+        return abs(temp[0]-temp[1])
+    elif len(L) == 1 and len(L[0]) > 1:
+        temp = calculatemorethanone(L[0])
+        return abs(temp[0]-temp[1])
     diff = perketcalculation(L[1:])
     ismax = calculatemorethanone(L[0])
     ismax = abs(ismax[0]-ismax[1])
