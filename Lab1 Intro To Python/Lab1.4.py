@@ -37,3 +37,7 @@ num = input("Enter input : ")
 num = int(num)
 drawupper()
 drawlower()
+"""
+Chapter : 1 - item : 4 - สนุกไปกับการวาดรูป(1)
+เขียนภาษา Python เพื่อวาดรูปหัวใจ ซึ่งจะรับ input เป็นขนาดของรูปหัวใจ โดย input จะมีค่าตั้งแต่ 2 ขึ้นไป
+"""

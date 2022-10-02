@@ -46,3 +46,23 @@ for i in inp:
 print(S.get_size())
 S.isempty()
 S.iscombo()
+"""
+Chapter : 4 - item : 3 - code with queue
+รับ string มาเข้าคิวหา secret code โดยรับ input คือ
+
+code เป็น string ยาว
+
+hint คือตัวแรกของรหัสที่ถูกต้อง
+
+**คำใบ้**
+
+ascii ของ "f" มีค่า = 102
+
+ascii ของ "g" มีค่า = 103
+
+ascii ของ "h" มีค่า = 104
+
+ascii ของ "i" มีค่า = 105
+
+ascii ของ "j" มีค่า = 106
+"""
