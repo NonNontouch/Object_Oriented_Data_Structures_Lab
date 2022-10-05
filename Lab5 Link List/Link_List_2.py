@@ -33,7 +33,7 @@ class DoublyLinkedList:
         return s
 
     def isEmpty(self):
-        return self.head.next == None
+        return self.head.next == self.tail
 
     def append(self, data):
         p = Node(data)
