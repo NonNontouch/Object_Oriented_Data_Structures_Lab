@@ -50,7 +50,7 @@ T.multbythree(T.root, int(inp[1]))
 T.printTree(T.root)
 
 """
-Chapter : 7 - item : 2 - หาค่า Below
-ให้น้องรับ input แล้วนำ input นั้นมาสร้าง Binary Search Tree โดย input ตัวแรกสุดจะเป็น Root เสมอ และหาค่าที่น้อยกว่าค่าที่รับเข้ามาของ Binary Search Tree
-***** ห้ามใช้ Built-in Function เช่น min() , max() , sort() , sorted()
+Chapter : 7 - item : 3 - สีแดงแรง 3 เท่า
+ให้น้องๆรับ input เป็น list และ k โดยให้สร้าง Binary Search Tree จาก list ที่รับมา และหลังจากนั้นให้ทำการดูว่าใน Tree
+มีค่าไหนที่มากกว่าค่า k หรือไม่ ถ้ามีให้ทำการคูณ 3 เพิ่มเข้าไป
 """
