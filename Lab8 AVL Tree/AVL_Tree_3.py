@@ -50,10 +50,10 @@ class roughTree:
                 root.left.data -= root.data
                 root.right.data -= root.data
 
-    def findsum(self, root,data):
+    def findsum(self, root, data):
         if root:
-            data = self.findsum(root.left,data)
-            data = self.findsum(root.right,data)
+            data = self.findsum(root.left, data)
+            data = self.findsum(root.right, data)
             data += root.data
         return data
 
@@ -67,14 +67,7 @@ if (int(inp[0]/2))+1 != len(inp[1]):
     exit()
 tree.create_complete_tree(inp[0], inp[1])
 tree.postorder(tree.root)
-print(tree.findsum(tree.root,0))
-
-
-"""
-Chapter : 8 - item : 2 - AVL ( Insert Only )
-ให้น้องๆสร้าง AVL Tree ด้วย Class โดยผลลัพธ์ให้แสดงเป็น Tree ในแต่ละรอบหลังจาก Insert และปรับ Balance เรียบร้อยแล้ว
-** ถ้าสงสัยสามารถดู visualization ของ AVL ได้ที่ website นี้ : https://www.cs.usfca.edu/~galles/visualization/AVLtree.html
-"""
+print(tree.findsum(tree.root, 0))
 
 """
 Chapter : 8 - item : 3 - ต้นไม้หยาบ
