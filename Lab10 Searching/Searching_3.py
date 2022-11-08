@@ -25,9 +25,9 @@ class hash:
                 elif i != self.maxcol:
                     print("collision number {0} at {1}".format(j+1, inde_2))
                     i += 1
-                elif i == self.maxcol:
-                    print("Max of collisionChain")
-            
+                    if i == self.maxcol:
+                        print("Max of collisionChain")
+                        break
         for i in range(len(self.table)):
             print("#{0}\t{1}".format(i+1, h.table[i]))
 
