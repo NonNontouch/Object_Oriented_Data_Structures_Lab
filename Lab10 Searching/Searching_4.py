@@ -42,7 +42,6 @@ class hash:
             if self.table[i] != None:
                 tempdata.append(self.table[i])
                 self.table[i] = None
-        temptable = []
         temptable = [None for i in range(len(self.table), self.findprime(len(self.table)*2))]
         self.table = self.table+temptable
         for i in tempdata:

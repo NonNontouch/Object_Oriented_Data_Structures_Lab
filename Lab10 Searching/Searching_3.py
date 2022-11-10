@@ -51,3 +51,15 @@ for i in text:
     else:
         print("This table is full !!!!!!")
         break
+"""
+Chapter : 10 - item : 3 - Fun with hashing
+ให้น้องเขียน Hashing โดยมีการทำงานดังนี้
+1. หา index ของ Table จากผลรวมของ ASCII จากค่า key จากนั้นนำมา mod ด้วยขนาดของ Table
+2. หากเกิด Collision ให้ทำการขยับค่า index แบบ Quadratic Probing
+3. ถ้าหากเกิด Collision จนถึงค่าที่กำหนดแล้ว ให้ทำการ Discard Data นั้นทิ้งทันที
+4. หาก Table นั้นมี Data เต็มแล้วให้แสดงคำว่า This table is full !!!!!! หากเคยแสดงคำนี้ไปแล้วไม่ต้องแสดงอีก (แสดงเพียง 1 ครั้ง)
+อธิบาย Input
+แบ่ง Data เป็น 2 ชุดด้วย /
+    -   ด้านซ้ายหมายถึง ขนาดของ Table และ MaxCollision ตามลำดับ
+    -   ด้านขวาหมายถึง Data n ชุด โดย Data แต่ละชุดแบ่งด้วย comma โดยใน Data แต่ละชุดจะแบ่งเป็น key กับ value ตามลำดับ
+"""
